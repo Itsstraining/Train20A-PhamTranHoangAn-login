@@ -1,0 +1,30 @@
+<form style="margin-left: 550px;margin-top: 50px;" [formGroup]='nameGroup'(ngSubmit)='onSubmit()'>
+        <p style="margin-left: 70px;"> Join Github </p>
+        <h1>Create your account</h1>
+    <p>
+        <mat-form-field appearance="fill" >
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Placeholder" formControlName="userControl">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+    <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Email address</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="emailControl">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    </p>
+    <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="passwordControl">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <button mat-button color="primary" type="submit">Submit</button>
+
+</form> 

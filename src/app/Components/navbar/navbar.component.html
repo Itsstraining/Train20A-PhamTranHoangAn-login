@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>Github</span>
+    <span class="example-spacer"></span>
+    <h5 *ngIf="authService.user!=null">{{authService.user.displayName}}</h5>
+    <button *ngIf="authService.user==null"(click)="this.authService.login()" mat-icon-button >
+      <mat-icon>login</mat-icon>
+    </button>
+    <button  *ngIf="authService.user!=null" (click)="this.authService.signout()">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-toolbar>
